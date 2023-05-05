@@ -23,11 +23,11 @@
 <form action="/login.jsp" method="POST">
     <div>
         <label for="username">Username</label>
-        <input id="username">
+        <input id="username" name="username">
     </div>
     <div>
         <label for="password">Password </label>
-        <input id="password">
+        <input id="password" name="password" type="password">
     </div>
     <button type="submit">Login</button>
 </form>
