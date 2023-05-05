@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+<form action="/login.jsp" typeof="post"></form>
 
 </body>
 </html>
