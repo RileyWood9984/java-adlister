@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     if (request.getMethod().equalsIgnoreCase("post")) {
-        String username = request.getParameter("uname");
-        String password = request.getParameter("pword");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
         if (username.equals("admin") && password.equals("password")) {
-            response.sendRedirect("/profile");
+            response.sendRedirect("/profile.jsp");
         }
     }
 %>
@@ -22,12 +22,12 @@
 <body>
 <form action="/login.jsp" method="POST">
     <div>
-        <label for="uname">Username</label>
-        <input id="uname">
+        <label for="username">Username</label>
+        <input id="username">
     </div>
     <div>
-        <label for="pword">Password </label>
-        <input id="pword">
+        <label for="password">Password </label>
+        <input id="password">
     </div>
     <button type="submit">Login</button>
 </form>
